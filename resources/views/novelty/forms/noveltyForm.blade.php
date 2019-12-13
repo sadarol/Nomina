@@ -1,41 +1,38 @@
 <div class="container">
-        <form action="">
-                                <div class="col-md-12">
-                                        <div class="card-content collapse show"> 
-                                                    <div class="form-body">
-                                                        <h4 class="form-section"><i class="ft-slack"></i>Crear Novedades</h4>
-                                                        <div class="row">
-                                                               
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label for="inputcodigo">Codigo</label>
-                                                                    <input type="number" id="inputcodigo" class="form-control border-primary" placeholder="Ingrese el codigo" name="codigo">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label for="inputdescripcion">Descripcion</label>
-                                                                    <input type="text" id="inputdescripcion" class="form-control border-primary" placeholder="Ingrese la descripcion " name="descripcion">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label for="inputporcentaje">Porcentaje</label>
-                                                                    <input type="email" id="inputporcentaje" class="form-control border-primary" placeholder="Ingrese el %" name="porcentaje">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-            
-                                                    <div class="form-actions text-right">
-                                                        <button type="button" class="btn btn-warning mr-1">
-                                                            <i class="ft-x"></i> Limpiar
-                                                        </button>
-                                                        <button type="submit" class="btn btn-success">
-                                                            <i class="la la-check-square-o"></i> Guardar
-                                                        </button>
-                                                    </div>
-                                        </div>
-                                    </div>           
-        </form>
-    </div>
+    <form action="">
+        <div class="col-md-12">
+            <div class="card-content collapse show">
+                <div class="form-body">
+
+                    <div class="row">
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                            <label for="complaintinput1">Codigo</label>
+                            <input type="text" class="form-control round" placeholder="Ingrese el codigo" name="codigo">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <label for="complaintinput1">Descripcion</label>
+                            <input type="text" class="form-control round" placeholder="Ingrese la descripción"
+                                name="apellidos">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3">
+                            <label for="complaintinput1">Porcentaje</label>
+                            <input type="email" class="form-control round" placeholder="Ingrese el porcentaje"
+                                name="porcentaje">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions text-right">
+                <button type="submit" class="btn btn-success">
+                    <i class="la la-check-square-o"></i> Guardar
+                </button>
+            </div>
+        </div>
+</div>
+</form>
+</div>

@@ -1,41 +1,37 @@
 <div class="container">
-        <form action="">
-                                <div class="col-md-12">
-                                        <div class="card-content collapse show"> 
-                                                    <div class="form-body">
-                                                        <h4 class="form-section"><i class="ft-plus-circle"></i>Crear Sucursal</h4>
-                                                        <div class="row">
-                                                               
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label for="inputnombresucursal">Nombre Sede</label>
-                                                                    <input type="text" id="inputnombresucursal" class="form-control border-primary" placeholder="Ingrese el nombre de la sede" name="nombresucursal">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label for="inputciudad">Ciudad</label>
-                                                                    <input type="text" id="inputciudad" class="form-control border-primary" placeholder="Ingrese la ciudad " name="ciudad">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label for="inputtelefono">Telefono</label>
-                                                                    <input type="tel" id="inputtelefono" class="form-control border-primary" placeholder="Ingrese el telefono" name="inputtelefono">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-            
-                                                    <div class="form-actions text-right">
-                                                        <button type="button" class="btn btn-warning mr-1">
-                                                            <i class="ft-x"></i> Limpiar
-                                                        </button>
-                                                        <button type="submit" class="btn btn-success">
-                                                            <i class="la la-check-square-o"></i> Guardar
-                                                        </button>
-                                                    </div>
-                                        </div>
-                                    </div>           
-        </form>
-    </div>
+        <div class="col-md-12">
+            <div class="card-content collapse show">
+                <div class="form-body">
+
+                    <div class="row">
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3">
+                            <label for="complaintinput1">Nombre sede</label>
+                            <input type="text" class="form-control round" placeholder="Ingrese el nombre de la sede"
+                                name="sede">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <label for="complaintinput1">Ciudad</label>
+                            <input type="text" class="form-control round" placeholder="Ingrese la ciudad"
+                                name="apellidos">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3">
+                            <label for="complaintinput1">Telefono</label>
+                            <input type="number" class="form-control round" placeholder="Ingrese el telefono"
+                                name="porcentaje">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions text-right">
+                <button type="submit" class="btn btn-success">
+                    <i class="la la-check-square-o"></i> Guardar
+                </button>
+            </div>
+        </div>
+</div>
+</div>

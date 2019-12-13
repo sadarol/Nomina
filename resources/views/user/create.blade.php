@@ -1,24 +1,28 @@
 @extends('layouts.main')
-@section('title', 'Crear Usuario')
+@section('title', 'Crear usuario')
 
 @section('content')
 
-<section id="icon-tabs">
+<div class="content-wrapper">
+    <div class="content-header row mb-1">
+    </div>
+    <div class="content-body">
+        <!-- Card con el contenido  -->
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Formulario</h4>
-                        <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                        <h4 class="card-title ft-user-plus"> Crear Usuarios</h4>
                     </div>
                     <div class="card-content collapse show">
-                        <div class="card-body">
+                        <div class="card-body pt-0">
                             @include('user.forms.userForm')
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+        <!--/ end card con el contenido -->
+    </div>
+</div>
 @endsection

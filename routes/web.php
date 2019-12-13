@@ -11,59 +11,43 @@
 |
 */
 
-//Vista Usuario
-Route::get('/usuario/',['as' => 'userCreate', function() {
-    return view('user.create');
-}]);
+//Vista empleados
 
-//Vista Listar Usuario
-Route::get('/listausuario/',['as' => 'userlist', function() {
-    return view('user.list');
-}]);
+//Vista lstar empleados
+Route::get('/lista/empleados',['as' => 'employeelist',  'uses' => 'EmployeeController@index']);
 
-//Vista Novedades
-Route::get('/novedad/',['as' => 'noveltyCreate', function() {
-    return view('novelty.create');
-}]);
+//Vista de crear empleados
+Route::get('/empleado/create',['as' => 'employeeCreate',  'uses' => 'EmployeeController@create']);
+//Vista editar empleados
+Route::get('/empleado/{id}/editar',['as' => 'employeeEdit',  'uses' => 'EmployeeController@edit']);
+//guardar empleados
+Route::post('/empleados',['as' => 'employeeStore', 'uses' => 'EmployeeController@store']);
+//Vista show detallada
+Route::get('/empleados/{id}',['as' => 'employeeShow', 'uses' => 'EmployeeController@show']);
+//metodo update
+Route::put('/empleados/{id}',['as' => 'employeeUpdate', 'uses' => 'EmployeeController@update']);
+//metodo eliminar
+Route::delete('/empleados/{id}',['as' => 'employeeDelete', 'uses' => 'EmployeeController@destroy']);
 
-//Vista Listar Novedad
-Route::get('/listanovedades/',['as' => 'noveltylist', function() {
-    return view('novelty.list');
-}]);
-
-//Vista Sucursales
-Route::get('/sucursales/',['as' => 'sucursalCreate', function() {
-    return view('sucursal.create');
-}]);
-
-//Vista Listar Sucursales
-Route::get('/listasucursales/',['as' => 'sucursallist', function() {
-    return view('sucursal.list');
-}]);
-
-
-//Vista nomina
-Route::get('/nomina/',['as' => 'payrollCreate', function() {
-    return view('payroll.create');
-}]);
-
-//Vista Autoliquidación
-Route::get('/autoliquidación/',['as' => 'self-assessmentCreate', function() {
-    return view('self-assessment.create');
-}]);
-
-
-//Vista principal
-/*
-Route::get('home',['as' => 'home', function () {
-    return view('/home/');
-}]);
-*/
-
+//Route::resource('empleados' , 'EmployeeController');
 Route::get('/', function () {
-    return view('home.index');
+    return view('auth.login');
 });
 
+//Esta es la ruta del index de la plantilla
+Route::get('/', function () {
+    return view('home.index');
+})->name('inicio');
+
+
+Auth::routes();
+
+Route::get('/reset', 'HomeController@index');
+
+Route::get('/home', 'HomeController@index');
+Auth::routes();
+
+Route::get('/cerrado',['as' => 'logout', 'uses' => 'LoginController@logout']);
 
 
 

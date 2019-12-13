@@ -1,67 +1,59 @@
 <div class="container">
     <form action="">
-                            <div class="col-md-12">
-                                    <div class="card-content collapse show"> 
-                                                <div class="form-body">
+        <div class="col-md-12">
+            <div class="card-content collapse show">
+                <div class="form-body">
 
-                                                        <div class="col-md-12" align="center">
-                                                                <img class="avatar img-circle img-responsive" id="profile_picture" height="128" data-src="default.jpg" data-holder-rendered="true" style="width: 140px; height: 140px;" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"/>
-                                                              <br><br>
-                                                                <input type="file" class="text-center center-block file-upload">
-                                                            </div>
-                                                            <br><br>
-                                                    <h4 class="form-section"><i class="ft-user-plus"></i>Crear Usuario</h4>
-                                                    <div class="row">
-                                                           
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label for="inputnombre">Nombres</label>
-                                                                <input type="text" id="inputnombres" class="form-control border-primary" placeholder="Ingrese el nombre" name="nombre">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label for="inputapellidos">Apellidos</label>
-                                                                <input type="text" id="inputapellidos" class="form-control border-primary" placeholder="Ingrese el apellido " name="apellidos">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label for="inputemail">Email</label>
-                                                                <input type="email" id="inputemail" class="form-control border-primary" placeholder="Email" name="inputemail">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label for="inputsede">Sede</label>
-                                                                    <input type="text" id="inputsede" class="form-control border-primary" placeholder="Sede" name="sede">
-                                                                </div>
-                                                            </div>
-                                                    </div>
+                    <div class="row">
 
-        
-                                                    <h4 class="form-section"><i class="ft-lock"></i> Seguridad</h4>
-        
-                                                    <div class="form-group">
-                                                        <label for="inputclave">Contraseña</label>
-                                                        <input class="form-control border-primary" type="password" placeholder="Ingrese su clave" id="inputclave">
-                                                    </div>
-        
-                                                    <div class="form-group">
-                                                        <label for="inputconfirmarclave">Confirmar Contraseña</label>
-                                                        <input class="form-control border-primary" type="password" placeholder="Confirmar su clave" id="inputconfirmarclave">
-                                                    </div>
-                                                </div>
-        
-                                                <div class="form-actions text-right">
-                                                    <button type="button" class="btn btn-warning mr-1">
-                                                        <i class="ft-x"></i> Limpiar
-                                                    </button>
-                                                    <button type="submit" class="btn btn-success">
-                                                        <i class="la la-check-square-o"></i> Guardar
-                                                    </button>
-                                                </div>
-                                    </div>
-                                </div>           
-    </form>
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                            <label for="complaintinput1">Nombres</label>
+                            <input type="text" class="form-control round" placeholder="Ingrese el nombre" name="name">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <label for="complaintinput1">Apellidos</label>
+                            <input type="text" class="form-control round" placeholder="Ingrese sus apellidos"
+                                name="apellidos">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3">
+                            <label for="complaintinput1">Email</label>
+                            <input type="email" class="form-control round" placeholder="Ingrese el email" name="email">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                            <label for="complaintinput1">Sede</label>
+                            <select class="form-control round" id="">
+                                <option>--Seleccionar--</option>
+                                <option>CC aventura</option>
+                                <option>Puerta del norte</option>
+                                <option>CC oviedo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3">
+                        <label for="complaintinput1">Contraseña</label>
+                        <input type="password" class="form-control round" placeholder="Ingrese la sede" name="password">
+                    </div>
+
+                    <div class="form-group col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3">
+                        <label for="complaintinput1">Confirmar Contraseña</label>
+                        <input type="password" class="form-control round" placeholder="Confirme la contraseña"
+                            name="password">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions text-right">
+                <button type="submit" class="btn btn-success">
+                    <i class="la la-check-square-o"></i> Guardar
+                </button>
+            </div>
+        </div>
+</div>
+</form>
 </div>
